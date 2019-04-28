@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<?php
+    $db = mysqli_connect('id','name','producttypeid','quantity');
+?>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+
+<body>
+Content of the document......
+<?php
+                $query = "SELECT * FROM `mytable`;";
+                $result = mysqli_query($db, $query);
+                while($row = mysqli_fetch_assoc($result)) {
+                      // Display your datas on the page
+                }
+          ?>
+</body>
+
+</html>
